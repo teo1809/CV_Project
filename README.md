@@ -11,12 +11,11 @@ Proiectul constă într-o pagină web personală de tip CV/Portofoliu. Aceasta s
 
 ## Funcționalități Implementate
 
-* **Profil și Date Academice:** Afișare nume, fotografie, descriere, medii de studiu (Anul I și Semestrul I din Anul II), secțiuni dedicate pentru Educație, Experiență (Atestat baze de date SQL) și Activități Extracurriculare (IEEE, Clubul de Electronică).
-* **Preluare Dinamică Date (GitHub API):** Conectare asincronă la endpoint-ul GitHub pentru extragerea repository-urilor utilizatorului `teo1809`.
-* **Indicator de Încărcare (Spinner):** Element grafic animat care rulează pe ecran în timpul preluării datelor și se ascunde automat după încărcarea acestora.
-* **Gestionare Erori (Error Handling):** Prinderea erorilor de rețea sau de limitare API și afișarea unui mesaj de alertă în UI (*"Nu am putut încărca proiectele momentan."*).
-* **Filtrare și Sortare Automată:** * Ascunderea proiectelor care sunt doar copii/preluate de la alții (`fork === false`).
-    * Ordonarea automată a listei începând cu cel mai recent modificat proiect (`updated_at`).
+* **Profil și Date Academice:** Afișare nume, fotografie, descriere, medii de studiu, secțiuni dedicate pentru educație, experiență și activități extracurriculare (IEEE, Clubul de Electronică).
+* **Preluare Dinamică Date (GitHub API):** Conectare asincronă la GitHub pentru extragerea repository-urilor utilizatorului `teo1809`.
+* **Spinner:** Element grafic animat care rulează pe ecran în timpul preluării datelor și se ascunde automat după încărcarea acestora.
+* **Filtrare și Sortare Automată:** Ordonarea automată a listei începând cu cel mai recent modificat proiect (`updated_at`).
+* **Forks:** Ascunderea proiectelor care sunt doar copii/preluate de la alții (`fork === false`).
 * **Căutare în Timp Real:** Casetă de text (*Search Input*) care filtrează instant proiectele pe ecran după nume sau după limbajul de programare, pe măsură ce utilizatorul tastați.
 * **Buton „Load More”:** Afișarea inițială a maximum 6 proiecte sub formă de carduri și încărcarea următoarelor tranșe de câte 6 la fiecare click pe buton.
 
