@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiecte - Teodora Olteanu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Teodora Olteanu</a>
+            <button class="hamburger" id="hamburger" aria-label="Deschide meniul">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Acasă</a></li>
+                    <li><a href="about.html" class="nav-link">Despre & Educație</a></li>
+                    <li><a href="projects.html" class="nav-link active">Proiecte</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section id="portfolio" class="portfolio-section animate-on-scroll">
+            <h2>Proiectele mele de pe GitHub</h2>
+            
+            <div class="filter-container">
+                <label for="search-input" class="sr-only">Caută proiecte</label>
+                <input type="text" id="search-input" placeholder="Caută un proiect după nume sau limbaj..." disabled>
+            </div>
+            
+            <div id="projects-container" class="projects-grid">
+                <div id="loading" class="loading-spinner-container">
+                    <div class="spinner"></div>
+                    <p>Se încarcă proiectele...</p>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button id="load-more-btn" class="btn btn-primary" style="display: none;">Încarcă mai multe proiecte</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Teodora Olteanu | Universitatea „Lucian Blaga” din Sibiu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

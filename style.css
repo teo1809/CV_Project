@@ -74,11 +74,12 @@ h2 {
 
 .repo-btn {
     display: inline-block;
-    background-color: #3182ce;
-    color: white;
+    background-color: #f6f8fa;
+    color: rgb(12, 12, 12);
     padding: 8px 12px;
     text-decoration: none;
     margin-top: 10px;
+    border: 1px solid #000000;
 }
 
 .repo-btn:hover {
@@ -150,5 +151,56 @@ footer {
     }
     .profile-section h1 {
         font-size: 1.8rem;
+    }
+}
+.page-content {
+    padding-top: 100px;
+    min-height: 80vh;
+}
+
+.nav-link.active {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/*pt desktop*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /*sa se vada*/
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        
+        /* ascuns implicit */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        max-height: 300px; /
     }
 }

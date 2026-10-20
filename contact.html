@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Teodora Olteanu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Teodora Olteanu</a>
+            <button class="hamburger" id="hamburger" aria-label="Deschide meniul">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Acasă</a></li>
+                    <li><a href="about.html" class="nav-link">Despre & Educație</a></li>
+                    <li><a href="projects.html" class="nav-link">Proiecte</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section id="contact" class="contact-section animate-on-scroll">
+            <h2>Contactează-mă</h2>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nume complet *</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresă de Email *</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subiect *</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+                    <span class="error-msg" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesaj *</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    <span class="error-msg" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Trimite Mesajul</button>
+                
+                <div id="form-status" class="form-status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Teodora Olteanu | Universitatea „Lucian Blaga” din Sibiu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

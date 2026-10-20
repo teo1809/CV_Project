@@ -3,112 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoliu Personal - Teodora Olteanu</title>
+    <title>Acasă - Teodora Olteanu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="profile-section">
-        <img src="poza1.jpg" class="profile-img" alt="Teodora Olteanu">
-        <h1>Teodora Olteanu</h1>
-        <p class="bio">
-            Studentă integralistă în anul II la Universitatea „Lucian Blaga” din Sibiu, domeniul Calculatoare și Tehnologia Informației, specializarea Calculatoare.<br>
-            <strong>Medie semestrul I, anul II:</strong> 9.12 | <strong>Medie anul I:</strong> 8.42
-        </p>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Teodora Olteanu</a>
+            <button class="hamburger" id="hamburger" aria-label="Deschide meniul">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Acasă</a></li>
+                    <li><a href="about.html" class="nav-link">Despre & Educație</a></li>
+                    <li><a href="projects.html" class="nav-link">Proiecte</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="education">
-            <h2>Educație</h2>
-            <ul>
-                <li>
-                    <strong>Universitatea „Lucian Blaga” din Sibiu</strong><br>
-                    <span>2024 - prezent</span>
-                    <p>Studentă în cadrul programului de studii psihopedagogice (DPPD),nivelul I, anul II</p>
-                </li>
-                <li>
-                    <strong>Colegiul Național „Dinicu Golescu”,Câmpulung Muscel</strong><br>
-                    <span>2020-2024</span>
-                    <p>Specializarea: matematică-informatică</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="experience">
-            <h2>Experiență & Atestate</h2>
-            <ul>
-                <li>
-                    <strong>Atestat de competențe profesionale</strong><br>
-                    <span>Anul: 2024</span>
-                    <p>Dobândite în realizarea design-ului și a structurii produselor soft necesare implementării de sisteme software, aplicații de baze de date, pagini WEB (software orientat client). Particularizarea, configurarea și modificarea aplicațiilor software, în scopul adaptării sistemelor informaționale ale clientului. Activitate practică: realizarea unei baze de date a unei cafenele folosind SQL.</p>
-                </li>
-            </ul>
-        </div>
-
-
-        <section class="extra-section">
-            <h2>Activități Extracurriculare</h2>
-            <div class="activity-item">
-                <strong>Membră activă a IEEE Region 8</strong> <span class="year"> — 2025</span>
-            </div>
-            <div class="activity-item">
-                <strong>Membră în Clubul de Electronică-activitate realizată în cadrul facultății</strong> <span class="year"> — 2025</span>
-                <p>Proiecte realizate: construcția unui receptor Radio AM/FM (Build-from-scratch) care a constat în realizarea integrală a unui receptor radio funcțional, pornind de la schema electrică, montarea componentelor (rezistențe, condensatori, tranzistori) prin lipire cu cositor (soldering) pe placa de circuit, până la asamblarea finală.</p>
-            </div>
-            <p class="motivation-text">
-                Dincolo de cursurile obligatorii, mă implic constant în proiecte tehnice diverse, explorând arii complementare specializării mele. Sunt o fire curioasă, motivată de învățarea continuă, iar în prezent îmi concentrez entuziasmul pe proiectarea CAD, dorind să-mi dezvolt competențele practice și designul tehnic.
+    <section id="hero" class="hero-section">
+        <div class="hero-content profile-section">
+            <img src="poza1.jpg" class="profile-img" alt="Fotografie de profil - Teodora Olteanu">
+            <h1>Teodora Olteanu</h1>
+            <p class="bio">
+                Studentă integralistă în anul II la Universitatea „Lucian Blaga” din Sibiu, domeniul Calculatoare și Tehnologia Informației.<br>
+                <strong>Medie semestrul I, anul II:</strong> 9.12 | <strong>Medie anul I:</strong> 8.42
             </p>
-        </section>
-
-        <section class="skills-section">
-            <h2>Abilități & Competențe</h2>
-            <div class="skills-container">
-                <div class="skills-block">
-                    <h3>Limbaje de programare & Web</h3>
-                    <ul>
-                        <li><strong>C/C++:</strong> Avansat</li>
-                        <li><strong>C#:</strong> Intermediar</li>
-                        <li><strong>Java:</strong> Intermediar</li>
-                        <li><strong>SQL:</strong> Intermediar</li>
-                        <li><strong>Python:</strong> De bază</li>
-                        <li><strong>Web Development (HTML5, CSS3, JavaScript):</strong> De bază</li>
-                    </ul>
-                </div>
-
-                <div class="skills-block">
-                    <h3>Limbi străine</h3>
-                    <ul>
-                        <li><strong>Engleză:</strong> Avansat</li>
-                        <li><strong>Germană:</strong> Intermediar</li>
-                    </ul>
-                </div>
+            <div class="hero-cta">
+                <a href="projects.html" class="btn btn-primary">Vezi Proiectele</a>
+                <a href="contact.html" class="btn btn-secondary">Contactează-mă</a>
             </div>
-        </section>
-
-        <hr>
-
-      <section class="portfolio-section">
-            <h2>Proiectele mele de pe GitHub</h2>
-            
-            <div class="filter-container">
-                <input type="text" id="search-input" placeholder="Caută un proiect după nume sau limbaj..." disabled>
-            </div>
-            
-            <div id="projects-container" class="projects-grid">
-                <div id="loading" class="loading-spinner-container">
-                    <div class="spinner"></div>
-                    <p>Se încarcă proiectele...</p>
-                </div>
-            </div>
-        </section>
-
-            <div class="load-more-container">
-                <button id="load-more-btn" style="display: none;">Încarcă mai multe proiecte</button>
-            </div>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 - Teodora Olteanu </p>
+        <p>&copy; 2026 - Teodora Olteanu | Universitatea „Lucian Blaga” din Sibiu</p>
     </footer>
 
     <script src="script.js"></script>
